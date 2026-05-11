@@ -1,0 +1,18 @@
+personal_ws-1.1 en 17 
+aspectratio
+bg
+boxrule
+center
+colback
+colframe
+includegraphics
+linewidth
+pdf
+png
+setbeamercolor
+tcolorbox
+tex
+trakt
+usepackage
+vspace
+xelatex
