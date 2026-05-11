@@ -22,6 +22,19 @@ header-includes:
 
 Why such rules?
 
+\pause
+
+\vfill
+\begin{alertblock}{Ethical Use Disclaimer}
+
+\begin{itemize}
+\item This demo introduces techniques that are commonly associated with offensive security, their purpose in this context is purely educational
+\item You are expected to use the knowledge and skills from this demo responsibly and ethically
+\item Any use of these techniques outside of authorised, educational, or professional penetration testing contexts is strictly prohibited and may be illegal
+\end{itemize}
+
+\end{alertblock}
+
 ---
 
 # Data Breaches
@@ -162,3 +175,12 @@ Good practices for strong password security **make it very hard/impossible to re
 ::::
 
 :::
+
+# Slides + Demo are Online
+
+- You can try this demo (responsibly!) at home
+- Instructions on how to reproduce it + PDF of the slides are available online:
+
+\center
+\includegraphics[width=.45\linewidth]{include/github-qr-code.png}
+\href{https://github.com/olivierpierre/scale-up-password-security-demo}{\texttt{https://github.com/olivierpierre/scale-up-password-security-demo}}

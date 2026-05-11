@@ -1,4 +1,5 @@
-personal_ws-1.1 en 17 
+personal_ws-1.1 en 20 
+alertblock
 aspectratio
 bg
 boxrule
@@ -6,6 +7,7 @@ center
 colback
 colframe
 includegraphics
+itemize
 linewidth
 pdf
 png
@@ -14,5 +16,6 @@ tcolorbox
 tex
 trakt
 usepackage
+vfill
 vspace
 xelatex
