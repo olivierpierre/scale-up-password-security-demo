@@ -12,7 +12,7 @@ You can check out the slides used during that event here.
 
 ## Prerequisite
 
-To reproduce the demo on various flavours of Windows, Mac, and Linux OSes, we wil luse a container: a virtual environment that can emulate a Linux machine on any modern computer, independently of the operating system it runs.
+To reproduce the demo on various flavours of Windows, Mac, and Linux OSes, we will use a container: a virtual environment that can emulate a Linux machine on any modern computer, independently of the operating system it runs.
 To that aim you will need to install the Docker container engine.
 Follow these instructions based on your system:
 
@@ -47,7 +47,7 @@ You will get access to a Linux-like command line environment preinstalled with a
 
 ### Defining and Hashing a Weak Password
 
-In this first demo we define a password, hash it with the MD5 hash function, then revert this hash to the original plain text password using hashcat.
+In this first demo we define a password, hash it with the MD5 hash function, then revert this hash to the original plain text password using `hashcat`.
 Decide on a simple password and hash it with the following command:
 
 ```
@@ -55,10 +55,10 @@ echo -n "weakpw" | md5sum | cut -d " " -f 1 > hashed_pw.txt
 ```
 
 Replace `weakpw` with the password of your choice.
-For the sake of the exercise the password should be weak: its length should not be too long, and it should not be made of a wide variety of character: this ensure that the cracking process will complete in a reasonable amount of time.
+For the sake of the exercise the password should be weak: its length should not be too long, and it should not be made of a wide variety of character: this ensures that the cracking process will complete in a reasonable amount of time.
 A password made of 6 lower case letter characters should do.
 
-After the above mentioned command runs, the hash will be placed in a file named `hashed_pw.txt`, located in the working directory.
+After the above-mentioned command runs, the hash will be placed in a file named `hashed_pw.txt`, located in the working directory.
 You can check out the hash by printing the content of this file on the console:
 
 ```
@@ -77,10 +77,10 @@ To that aim run the following command:
 hashcat -m 0 -a 3 hashed_pw.txt
 ```
 
-Here `-m 0` means that hashcat will use the MD5 hash function, and `-a 3` indicates we want to attempt a brute force attack, i.e., trying all possible combinations of characters.
-Hashcat will initialise and start to run.
+Here `-m 0` means that `hashcat` will use the MD5 hash function, and `-a 3` indicates we want to attempt a brute force attack, i.e., trying all possible combinations of characters.
+`hashcat` will initialise and start to run.
 Things may take a variable amount of time based on the processing power of your computer and the length/complexity of the password you defined.
-Once hashcat outputs the following line, the password has been cracked:
+Once `hashcat` outputs the following line, the password has been cracked:
 
 ```
 Recovered........: 1/1 (100.00%) Digests (total), 1/1 (100.00%) Digests (new)
@@ -92,7 +92,7 @@ If you scroll up you should see the cracked password and its hash:
 171e6599c861cdbf291ad70e4ecdbc47:weakpw
 ```
 
-If the process takes too long, e.g., because the password you chose was too long/complex, you can hit <kbd>ctrl</kbd>+<kbd>c</kbd> to stop hashcat and repeat the previous steps to set a password that is faster to crack.
+If the process takes too long, e.g., because the password you chose was too long/complex, you can hit <kbd>ctrl</kbd>+<kbd>c</kbd> to stop `hashcat` and repeat the previous steps to set a password that is faster to crack.
 
 ## Demo 2: Cracking Rockyou.txt
 
@@ -126,7 +126,7 @@ hashcat -m 0 -a 3 rockyou_md5.txt
 ```
 
 `hashcat` will start to run and will display the password for each hash successfully cracked.
-Rockyou.txt contains tons of weak password, and you should quickly see thouhsands of passwords:
+Rockyou.txt contains tons of weak password, and you should quickly see thousands of passwords:
 
 ```
 783240a5bd72ca8b369ef0ebeceef0d7:physhi1                  
