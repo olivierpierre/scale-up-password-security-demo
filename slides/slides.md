@@ -182,5 +182,5 @@ Good practices for strong password security **make it very hard/impossible to re
 - Instructions on how to reproduce it + PDF of the slides are available online:
 
 \center
-\includegraphics[width=.45\linewidth]{include/github-qr-code.png}
+\includegraphics[width=.45\linewidth]{include/github-qr-code.pdf}
 \href{https://github.com/olivierpierre/scale-up-password-security-demo}{\texttt{https://github.com/olivierpierre/scale-up-password-security-demo}}
