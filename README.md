@@ -3,7 +3,7 @@
 [Pierre Olivier](https://sites.google.com/view/pierreolivier)
 
 These instructions are there to help you reproduce at home the password cracking examples presented during the University of Manchester's scale up password security demo.
-You can check out the slides used during that event here.
+You can check out the slides used during that event [here](https://github.com/olivierpierre/scale-up-password-security-demo/blob/main/slides/slides.pdf).
 
 > ⚠️ Ethical Use Disclaimer
 > 
